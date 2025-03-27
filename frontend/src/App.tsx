@@ -11,8 +11,39 @@ import Checkout from "./pages/Checkout";
 import CheckoutSuccess from "./pages/CheckoutSuccess";
 import NotFound from "./pages/NotFound";
 import { CartProvider } from "./hooks/use-cart";
+// import LoginPopUp from "./components/LoginPopUp/LoginPopUp";
 
 const queryClient = new QueryClient();
+
+// const App = () => {
+//   const [showLogin, setShowLogin] = useState(false);
+
+//   return (
+//     <QueryClientProvider client={queryClient}>
+//       <CartProvider>
+//         <TooltipProvider>
+//           <Toaster />
+//           <Sonner />
+//           {showLogin && <LoginPopUp onClose={() => setShowLogin(false)} />}
+//           <BrowserRouter>
+//             <Routes>
+//               <Route path="/" element={<Index onLoginClick={() => setShowLogin(true)} />} />
+//               <Route path="/products" element={<Products />} />
+//               <Route path="/products/:id" element={<ProductDetail />} />
+//               <Route path="/men" element={<Products />} />
+//               <Route path="/women" element={<Products />} />
+//               <Route path="/cart" element={<Cart />} />
+//               <Route path="/checkout" element={<Checkout />} />
+//               <Route path="/checkout-success" element={<CheckoutSuccess />} />
+//               <Route path="*" element={<NotFound />} />
+//             </Routes>
+//           </BrowserRouter>
+//         </TooltipProvider>
+//       </CartProvider>
+//     </QueryClientProvider>
+//   );
+// };
+// export default App;
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
